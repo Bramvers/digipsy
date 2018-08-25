@@ -1,6 +1,5 @@
-
-.body {
-  background-color: white;
+.main {
+  background-color: red;
 }
 
 .navbar {
@@ -10,12 +9,16 @@
 
 .navbar-brand {
   color: white;
-  }
+}
+
+.jumbotron {
+ background-color: green ;
+}
 
 .nav-link {
   padding: 20px;
   font-size: 20px;
-  color: #D6D13A;
+  color: #FAFAFA;
 }
 
 .form-inline {
@@ -23,12 +26,18 @@
   float: right;
 }
 
-.container{
-  background-color: white;
+.container {
+
   color: darkblue;
   font-family: sans-serif;
   padding: 20px;
 }
 
+.container2 {
+  background-color: red;
+  color: green;
+  font-family: sans-serif;
+  padding: 20px;
+}
 .row {
 }
