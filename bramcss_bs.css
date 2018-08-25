@@ -5,14 +5,13 @@
 .navbar {
    background-color: #00172E;
    padding: 12px;
+   height: 60px;
+line-height: 40px;
 }
 
 .navbar-brand {
-  color: white;
-}
-
-.jumbotron {
- background-color: green ;
+  color: red;
+  font-size: 120px;
 }
 
 .nav-link {
@@ -26,18 +25,21 @@
   float: right;
 }
 
-.container {
+.jumbotron{
+  padding: 100px;
+}
 
+.container {
   color: darkblue;
   font-family: sans-serif;
   padding: 20px;
 }
 
 .container2 {
-  background-color: red;
-  color: green;
+  background-color: #FAFAFA;
   font-family: sans-serif;
-  padding: 20px;
+  padding: 200px;
 }
+
 .row {
 }
