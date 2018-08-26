@@ -120,52 +120,32 @@
           </script>
 
 
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            dataLayer.push({
-              ga('ec:addProduct', {               // Provide product details in an productFieldObject.
-                'event': 'BV_Checkout',
-                'id': 'P12345',                   // Product ID (string).
-                'name': 'Android Warhol T-Shirt', // Product name (string).
-                'category': 'Apparel',            // Product category (string).
-                'brand': 'Google',                // Product brand (string).
-                'variant': 'black',               // Product variant (string).
-                'price': '29.20',                 // Product price (currency).
-                'quantity': 1                     // Product quantity (number).
-              });
+          <p><a class="btn btn-secondary" href="#" role="button" onclick="dataLayer.push({
 
-              // Add the step number and additional info about the checkout to the action.
-              ga('ec:setAction','checkout', {
-                  'step': 1,
-                  'option': 'Visa'
-                  }]
-              });
-          </script>
+            'event': 'ecom buttonclick'
+
+            'id': 'P12345',                   // Product ID (string).
+            'name': 'Android Warhol T-Shirt', // Product name (string).
+            'category': 'Apparel',            // Product category (string).
+            'brand': 'Google',                // Product brand (string).
+            'variant': 'black',               // Product variant (string).
+            'price': '29.20',                 // Product price (currency).
+            'quantity': 1                     // Product quantity (number).
+          });
+
+          // Add the step number and additional info about the checkout to the action.
+          ga('ec:setAction','checkout', {
+              'step': 1,
+              'option': 'Visa'
+          });
 
 
 
+        });">KLIK CHECKOUT ECOM</a></p>
 
-          <script>
-          dataLayer.push({
-                    ga('ec:addProduct', {               // Provide product details in an productFieldObject.
-                      'event': 'BV_Checkout',
-                      'id': 'P12345',                   // Product ID (string).
-                      'name': 'Android Warhol T-Shirt', // Product name (string).
-                      'category': 'Apparel',            // Product category (string).
-                      'brand': 'Google',                // Product brand (string).
-                      'variant': 'black',               // Product variant (string).
-                      'price': '29.20',                 // Product price (currency).
-                      'quantity': 1                     // Product quantity (number).
-                    });
 
-                    // Add the step number and additional info about the checkout to the action.
-                    ga('ec:setAction','checkout', {
-                        'step': 1,
-                        'option': 'Visa'
-                        }]
-                    });
 
-              </script>
+
 
 
         </div>
