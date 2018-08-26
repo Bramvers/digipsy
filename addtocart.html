@@ -66,36 +66,34 @@
       <div class="jumbotron">
         <div class="container">
           <img class="img1" src="nepal.jpg" height="10%" width="100%">
-          <h1 class="display-3">Ecommerce here</h1>
+          <h1 class="display-3">Add to cart page</h1>
 
           <p><a class="btn btn-primary btn-lg" href="blog.html" role="button" onclick="dataLayer.push({'event' : 'BVEvent', 'eventCategory' : 'User behaviour',  'eventAction' : 'Klik op centrale CTA',  'eventLabel' : {{Page Path}}, 'eventValue' : 1});">Ecommerce Page Klik datalayer</a></p>
 
               <script>
                 window.dataLayer = window.dataLayer || [];
                 dataLayer.push({
-                  'event': 'ecommerce here',
-                  'transactionId': '1234',
-                  'transactionAffiliation': 'Acme Clothing',
-                  'transactionTotal': 38.26,
-                  'transactionTax': 1.29,
-                  'transactionShipping': 5,
-                  'transactionProducts': [{
-                      'sku': 'DD44',
-                      'name': 'T-Shirt',
-                      'category': 'Apparel',
-                      'price': 11.99,
-                      'quantity': 1
-                  },{
-                      'sku': 'AA1243544',
-                      'name': 'Socks',
-                      'category': 'Apparel',
-                      'price': 9.99,
-                      'quantity': 1
-                  }]
+                  "event": "addToCart",
+                  "ecommerce": {
+                    "currencyCode": "USD",
+                    "add": {
+                      "products": [{
+                        "id": "57b9d",
+                        "name": "Kiosk T-Shirt",
+                        "price": "55.00",
+                        "brand": "Kiosk",
+                        "category": "T-Shirts",
+                        "variant": "red",
+                        "dimension4": "Gekocht op site van BraVe",
+                        "quantity": 1
+                      }]
+                    }
+                  }
                 });
+
               </script>
 
-        </div>
+      </div>
       </div>
 
       <div class="container">
