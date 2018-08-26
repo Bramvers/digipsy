@@ -2,30 +2,9 @@
 <head>
 <html lang="en">
 
-<script>
-window.dataLayer = window.dataLayer || []
-dataLayer.push({
-   'transactionId': '2727',
-   'transactionAffiliation': 'Bram Clothing',
-   'transactionTotal': 27.27,
-   'transactionTax': 1.29,
-   'transactionShipping': 5,
-   'transactionProducts': [{
-       'sku': 'DD44',
-       'name': 'T-Shirt',
-       'category': 'Apparel',
-       'price': 11.99,
-       'quantity': 1
-   },{
-       'sku': 'AA1243544',
-       'name': 'Hat',
-       'category': 'Apparel',
-       'price': 9.99,
-       'quantity': 2
-   }]
-});
-</script>
-
+  <script>
+  dataLayer = [];
+  </script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -33,13 +12,6 @@ dataLayer.push({
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-PCPW8NG');</script>
   <!-- End Google Tag Manager -->
-
-  <!-- Google optimize -->
-
-ga('create', 'UA-114919673-1', 'auto', {allowLinker: true}, {anonymizeIp: true});
-
-<!-- end Google optimize -->
-
 
   <link rel="stylesheet" type="text/css" href="bramcss_bs.css">
   <title>DigiPsy - Psychology | Neuromarketing | Analytics | Conversion Rate Optimization </title>
@@ -54,14 +26,12 @@ ga('create', 'UA-114919673-1', 'auto', {allowLinker: true}, {anonymizeIp: true})
  <meta charset="UTF-8">
  <meta name="description" content="CRO, psychology and analysis">
  <meta name="keywords" content="CRO, psychology, analysis">
- <meta name="author" content="BraVe - contact">
+ <meta name="author" content="BraVe">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </html>
 </head>
-
-
 
   <body>
 
@@ -90,26 +60,89 @@ ga('create', 'UA-114919673-1', 'auto', {allowLinker: true}, {anonymizeIp: true})
         </form>
       </div>
     </nav>
-    </nav>
 
-    <main role="main">
+   <main role="main">
+
       <div class="jumbotron">
         <div class="container">
-          <img src="nepal.jpg" height="10%" width="100%"> </img>
-          <h1 class="display-3">Contact</h1>
+          <img class="img1" src="nepal.jpg" height="10%" width="100%">
+          <h1 class="display-3">Ecommerce here</h1>
 
-            <p>Plese get in touch. </P>
+
+          <p><a class="btn btn-primary btn-lg" href="blog.html" role="button" onclick="dataLayer.push({'event' : 'BVEvent', 'eventCategory' : 'User behaviour',  'eventAction' : 'Klik op centrale CTA',  'eventLabel' : {{Page Path}}, 'eventValue' : 1});">Ecommerce Page Klik datalayer</a></p>
+
+
+
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            dataLayer.push({
+              'event': 'ecommerce here',
+              'transactionId': '1234',
+              'transactionAffiliation': 'Acme Clothing',
+              'transactionTotal': 38.26,
+              'transactionTax': 1.29,
+              'transactionShipping': 5,
+              'transactionProducts': [{
+                  'sku': 'DD44',
+                  'name': 'T-Shirt',
+                  'category': 'Apparel',
+                  'price': 11.99,
+                  'quantity': 1
+              },{
+                  'sku': 'AA1243544',
+                  'name': 'Socks',
+                  'category': 'Apparel',
+                  'price': 9.99,
+                  'quantity': 1
+              }]
+            });
+          </script>
+
+
 
         </div>
       </div>
 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img  class="center "src="psy.jpg" height="10%" width="10%">
+            <h2 text-align="center">Psychology</h2>
+            <p>The human mind. It defines us. You. Me. Everybody!  Behavioral economics. Cognitive Pyschology. Neurocognition. Aapplied psychology for business contexts. Uti psychological principles to increase online profits? Find out here!
+            <p><a class="btn btn-secondary" href="#" role="button">Learn more &raquo;</a> </p>
+          </div>
+          <div class="col-md-4">
+            <h2>Analytics</h2>
+            <p>The core. The fundamentals. The origin. Analytics is at the base of it all.
+            <p><a class="btn btn-secondary" href="#" role="button">Learn more &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Conversion Rate Optimization - WELCOME</h2>
+            <p>The art. Combining insights from advanced data analysis, user psychology and persuasion into the most compelling mechanisms of digital marketing. Enter the world of Conversion Rate Optimization.</p>
 
+
+            <p><a class="btn btn-secondary" href="#" role="button" onclick="dataLayer.push({'event': 'buttonclick'});">Learn more Click Now &raquo;</a></p>
+
+
+
+
+          </div>
+        </div>
 
         <hr>
 
+        <div class="container2">
+          <div class="row">
+            <div class="col-md-12">
+              <img  class="center "src="psy.jpg" height="10%" width="10%"> </img>
+              <h2 text-align="center">Psychology</h2>
+              <p>The human mind. It defines us. You. Me. Everybody!  Behavioral economics. Cognitive Pyschology. Neurocognition. Get into applied psychology for business contexts.
+              <p><a class="btn btn-secondary" href="#" role="button">Learn more &raquo;</a> </p>
+            </div>
+          </div>
+
       </div> <!-- /container -->
 
-    </main>
 
     <footer class="container">
       <p>&copy; Bram Verstappen 2018</p>
