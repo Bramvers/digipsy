@@ -72,6 +72,27 @@
           <p><a class="btn btn-primary btn-lg" href="blog.html" role="button" onclick="dataLayer.push({'event' : 'BVEvent', 'eventCategory' : 'User behaviour',  'eventAction' : 'Klik op centrale CTA',  'eventLabel' : {{Page Path}}, 'eventValue' : 1});">Ecommerce Page Klik datalayer</a></p>
 
 
+<script>
+          ga('ec:addProduct', {               // Provide product details in an productFieldObject.
+            'event': 'BV_Checkout',
+            'id': 'P12345',                   // Product ID (string).
+            'name': 'Android Warhol T-Shirt', // Product name (string).
+            'category': 'Apparel',            // Product category (string).
+            'brand': 'Google',                // Product brand (string).
+            'variant': 'black',               // Product variant (string).
+            'price': '29.20',                 // Product price (currency).
+            'quantity': 1                     // Product quantity (number).
+          });
+
+          // Add the step number and additional info about the checkout to the action.
+          ga('ec:setAction','checkout', {
+              'step': 1,
+              'option': 'Visa'
+          });
+
+    </script>
+
+
 
           <script>
             window.dataLayer = window.dataLayer || [];
@@ -98,6 +119,25 @@
             });
           </script>
 
+          <script>
+                    ga('ec:addProduct', {               // Provide product details in an productFieldObject.
+                      'event': 'BV_Checkout',
+                      'id': 'P12345',                   // Product ID (string).
+                      'name': 'Android Warhol T-Shirt', // Product name (string).
+                      'category': 'Apparel',            // Product category (string).
+                      'brand': 'Google',                // Product brand (string).
+                      'variant': 'black',               // Product variant (string).
+                      'price': '29.20',                 // Product price (currency).
+                      'quantity': 1                     // Product quantity (number).
+                    });
+
+                    // Add the step number and additional info about the checkout to the action.
+                    ga('ec:setAction','checkout', {
+                        'step': 1,
+                        'option': 'Visa'
+                    });
+
+              </script>
 
 
         </div>
