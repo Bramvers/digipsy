@@ -66,54 +66,22 @@
       <div class="jumbotron">
         <div class="container">
           <img class="img1" src="nepal.jpg" height="10%" width="100%">
-          <h1 class="display-3">Add to cart page</h1>
+          <h1 class="display-3">Step 1</h1>
 
-          <p><a class="btn btn-primary btn-lg" href="blog.html" role="button" onclick="dataLayer.push({'event' : 'BVEvent', 'eventCategory' : 'User behaviour',  'eventAction' : 'Klik op centrale CTA',  'eventLabel' : {{Page Path}}, 'eventValue' : 1});">Ecommerce Page Klik datalayer</a></p>
-
-
-          <script>
-          // Measures product impressions and also tracks a standard
-          // pageview for the tag configuration.
-          // Product impressions are sent by pushing an impressions object
-          // containing one or more impressionFieldObjects.
-          dataLayer.push({
-            "event": "impressions",
-            'ecommerce': {
-              'currencyCode': 'EUR',                       // Local currency is optional.
-              'impressions': [
-               {
-                 'name': 'Triblend Android T-Shirt',       // Name or ID is required.
-                 'id': '12345',
-                 'price': '15.25',
-                 'brand': 'Google',
-                 'category': 'Apparel',
-                 'variant': 'Gray',
-                 'list': 'Search Results',
-                 'position': 1
-               },
-               {
-                 'name': 'Donut Friday Scented T-Shirt',
-                 'id': '67890',
-                 'price': '33.75',
-                 'brand': 'Google',
-                 'category': 'Apparel',
-                 'variant': 'Black',
-                 'list': 'Search Results',
-                 'position': 2
-               }]
-            }
-          });
-          </script>
-
-
+          <p><a class="btn btn-primary btn-lg" href="step3.html">naar stap 3</a></p>
 
 
           <script>
+          /**
+           * A function to handle a click on a checkout button. This function uses the eventCallback
+           * data layer variable to handle navigation after the ecommerce data has been sent to Google Analytics.
+           */
+          function onCheckout() {
             dataLayer.push({
               'event': 'checkout',
               'ecommerce': {
                 'checkout': {
-                  'actionField': {'step': 1, 'option': 'Visa'},
+                  'actionField': {'step': 2, 'option': 'Visa'},
                   'products': [{
                     'name': 'Triblend Android T-Shirt',
                     'id': '12345',
@@ -125,7 +93,8 @@
                  }]
                }
              },
-
+             'eventCallback': function() {
+                document.location = 'checkout.html';
              }
             });
           }
@@ -133,27 +102,6 @@
 
 
 
-              <script>
-                window.dataLayer = window.dataLayer || [];
-                dataLayer.push({
-                  "event": "addToCart",
-                  "ecommerce": {
-                    "currencyCode": "EUR",
-                    "add": {
-                      "products": [{
-                        "id": "57b9d",
-                        "name": "Kiosk T-Shirt",
-                        "price": "55.00",
-                        "brand": "Kiosk",
-                        "category": "T-Shirts",
-                        "variant": "red",
-                        "dimension4": "Gekocht op site van BraVe",
-                        "quantity": 1
-                      }]
-                    }
-                  }
-                });
-              </script>
 
 
 
@@ -164,7 +112,7 @@
 
 
 
-      </div>
+        </div>
       </div>
 
       <div class="container">
@@ -186,7 +134,6 @@
 
 
             <p><a class="btn btn-secondary" href="#" role="button" onclick="dataLayer.push({'event': 'buttonclick'});">Learn more Click Now &raquo;</a></p>
-
 
 
 
