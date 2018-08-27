@@ -94,7 +94,7 @@
 
       <script>
           dataLayer.push({
-             "ecommerceBV": {
+             "ecommerce": {
                "currencyCode":"EUR",
                "impressions": [    //the array of products present within the listing
                 {
@@ -134,6 +134,27 @@
           });
 
         </script>
+
+        
+                <script>
+        dataLayer.push({
+           "ecommerce": {
+             "currencyCode":"USD",
+             "detail": {
+               "actionField": {"list":"Boss Clothing"},     //optional list property
+               "products": [{
+                 "id":"gkj62",
+                 "name":"Boss T-Shirt",
+                 "price":"26.10",
+                 "brand":"Boss",
+                 "category":"Men/Clothing/T-Shirts",
+                 "variant":"black"
+              }]
+            }
+          }
+        });
+
+                </script>
 
 
         </div>
