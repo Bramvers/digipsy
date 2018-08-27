@@ -5,6 +5,26 @@
   <script>
   dataLayer = [];
   </script>
+
+<script>
+  dataLayer.push({
+     "ecommerce": {
+       "currencyCode":"USD",
+       "detail": {
+         "actionField": {"list":"Boss Clothing"},     //optional list property
+         "products": [{
+           "id":"gkj62",
+           "name":"Boss T-Shirt",
+           "price":"26.10",
+           "brand":"Boss",
+           "category":"Men/Clothing/T-Shirts",
+           "variant":"black"
+        }]
+      }
+    }
+  });
+</script>
+
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -76,7 +96,7 @@
            * A function to handle a click on a checkout button. This function uses the eventCallback
            * data layer variable to handle navigation after the ecommerce data has been sent to Google Analytics.
            */
-          function onCheckout() {
+
             dataLayer.push({
               'event': 'checkout',
               'ecommerce': {
@@ -93,9 +113,7 @@
                  }]
                }
              },
-             'eventCallback': function() {
-                document.location = 'checkout.html';
-             }
+
             });
           }
           </script>
