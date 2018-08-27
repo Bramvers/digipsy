@@ -71,42 +71,48 @@
           <p><a class="btn btn-primary btn-lg" href="step2.html">naar stap 2</a></p>
 
 
+      <script>
+          dataLayer.push({
+             "ecommerceBV": {
+               "currencyCode":"EUR",
+               "impressions": [    //the array of products present within the listing
+                {
+                   "id":"9bf1d",    //internal id or SKU
+                   "name":"Boss T-Shirt",    //you should have at least Name and ID set up
+                   "price":"44.00",   //use only xxxx.xx formatting
+                   "brand":"Bvlgari", //manufacturer or designer
+                   "category":"Men/Clothing/T-Shirts", //can be hierarchical up to 5 levels; separated by"/"
+                   "position":0,    //position within the list
+                   "variant":"Blue", //optional,if you need more differentiation
+                   "list":"Category page"    //custom name for the list of products
+                },
+                {   //second product
+                   "id":"j6be7",
+                   "name":"Comverges T-Shirt",
+                   "price":"32.45",
+                   "brand":"Comverges",
+                   "category":"T-Shirts",
+                   "position":1,
+                   "list":"Category page"
+                },
+
+                   ...
 
 
+                {
+                   "id":"2u3gy",
+                   "name":"Kiosk T-Shirt",
+                   "price":"56.70",
+                   "brand":"Kiosk",
+                   "category":"T-Shirts",
+                   "position":1,
+                   "list":"Category recommendations" //you could even include a separate list of products on the category page like a custom recommendation section
+                }
+              ]
+            }
+          });
 
-          <script>
-          /**
-           * A function to handle a click on a checkout button. This function uses the eventCallback
-           * data layer variable to handle navigation after the ecommerce data has been sent to Google Analytics.
-           */
-
-            dataLayer.push({
-              'event': 'checkout',
-              'ecommerce': {
-                'checkout': {
-                  'actionField': {'step': 1, 'option': 'Visa'},
-                  'products': [{
-                    'name': 'Triblend Android T-Shirt',
-                    'id': '12345',
-                    'price': '15.25',
-                    'brand': 'Google',
-                    'category': 'Apparel',
-                    'variant': 'Gray',
-                    'quantity': 1
-                 }]
-               }
-             },
-      
-            });
-          }
-          </script>
-
-
-
-
-
-
-
+        </script>
 
 
         </div>
