@@ -10,7 +10,7 @@ line-height: 40px;
 }
 
 .navbar-brand {
-  color: red;
+  color: grey;
   font-size: 120px;
 }
 
@@ -20,13 +20,23 @@ line-height: 40px;
   color: #FAFAFA;
 }
 
+.center {
+  margin-left: 38%;
+  margin-right: auto;
+  width: 5em
+}
+
+h2{
+  text-align: center;
+}
+
 .form-inline {
   position: relative;
   float: right;
 }
 
 .jumbotron {
-  padding: 100px;
+  padding: ;
 }
 
 .container {
