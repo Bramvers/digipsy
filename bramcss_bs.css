@@ -26,6 +26,12 @@ line-height: 40px;
   width: 5em
 }
 
+
+.col-md-6{
+  padding: 20px;
+}
+
+
 h2{
   text-align: center;
 }
