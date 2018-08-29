@@ -6,25 +6,6 @@
   dataLayer = [];
   </script>
 
-<script>
-  dataLayer.push({
-     "ecommerce": {
-       "currencyCode":"USD",
-       "detail": {
-         "actionField": {"list":"Boss Clothing"},     //optional list property
-         "products": [{
-           "id":"gkj62",
-           "name":"Boss T-Shirt",
-           "price":"26.10",
-           "brand":"Boss",
-           "category":"Men/Clothing/T-Shirts",
-           "variant":"black"
-        }]
-      }
-    }
-  });
-</script>
-
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -88,7 +69,7 @@
           <img class="img1" src="nepal.jpg" height="10%" width="100%">
           <h1 class="display-3">Artikel 2: product click</h1>
 
-          <p><a class="btn btn-primary btn-lg" href="step3.html">naar stap 3</a></p>
+          <p><a class="btn btn-primary btn-lg" href="step3.html">naar stap 3!!</a></p>
 
 
 
@@ -100,7 +81,7 @@
            * to Google Analytics.
            * @param {Object} productObj An object representing a product.
            */
-          function(productObj) {
+          function(artikel2) {
             dataLayer.push({
               'event': 'productClick',
               'ecommerce': {
@@ -118,17 +99,11 @@
                  }
                },
                'eventCallback': function() {
-                 document.location = productObj.url
+                 document.location = artikel2.url
                }
             });
           }
           </script>
-
-
-
-
-
-
 
 
 
