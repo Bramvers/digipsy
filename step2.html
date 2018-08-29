@@ -69,42 +69,7 @@
           <img class="img1" src="nepal.jpg" height="10%" width="100%">
           <h1 class="display-3">Artikel 2: product click</h1>
 
-          <p><a class="btn btn-primary btn-lg" href="step3.html">naar stap 3!!</a></p>
-
-
-
-
-          <script>
-          /**
-           * Call this function when a user clicks on a product link. This function uses the event
-           * callback datalayer variable to handle navigation after the ecommerce data has been sent
-           * to Google Analytics.
-           * @param {Object} productObj An object representing a product.
-           */
-          function(artikel2) {
-            dataLayer.push({
-              'event': 'productClick',
-              'ecommerce': {
-                'click': {
-                  'actionField': {'list': 'Search Results'},      // Optional list property.
-                  'products': [{
-                    'name': Artikel2.name,                      // Name or ID is required.
-                    'id': artikel2.id,
-                    'price': 12,
-                    'brand': BraVe Cool brand,
-                    'category': coole Shit,
-                    'variant': de bomb,
-                    'position': 2
-                   }]
-                 }
-               },
-               'eventCallback': function() {
-                 document.location = artikel2.url
-               }
-            });
-          }
-          </script>
-
+          <p><a class="btn btn-primary btn-lg" href="step3.html" onclick="dataLayer.push({'event': 'buttonclick'});">naar stap 3!!</a></p>
 
 
 
