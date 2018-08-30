@@ -71,8 +71,7 @@
 
 
 
-          <button a href="#" onclick="
-          dataLayer.push({
+          <button a href="#" onclick="dataLayer.push({
              "event":"EEproductClick",
              "ecommerce": {
                "currencyCode":"USD",
@@ -93,6 +92,27 @@ click me NOW!</button>
 
 
 
+
+<a href="#" name="button1" onclick="dataLayer.push({'event': 'button1-click'});" >Button 1</a>
+
+
+<a href="#" name="button1" onclick="dataLayer.push({
+   "event":"EEproductClick",
+   "ecommerce": {
+     "currencyCode":"USD",
+     "click": {
+       "actionField": {"list":"category" },
+       "products": [{
+         "id":"9bf1d",
+         "name":"Boss T-Shirt",
+         "price":"37.00",
+         "brand":"Converse",
+         "category":"Men/Clothing/T-Shirts",
+         "position":"2"
+      }]
+    }
+  }
+});" >Button 2!!!</a>
 
 
 
