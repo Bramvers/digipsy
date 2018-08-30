@@ -71,48 +71,9 @@
 
 
 
-          <button a href="#" onclick="dataLayer.push({
-             "event":"EEproductClick",
-             "ecommerce": {
-               "currencyCode":"USD",
-               "click": {
-                 "actionField": {"list":"category" },
-                 "products": [{
-                   "id":"9bf1d",
-                   "name":"Boss T-Shirt",
-                   "price":"37.00",
-                   "brand":"Converse",
-                   "category":"Men/Clothing/T-Shirts",
-                   "position":"2"
-                }]
-              }
-            }
-          });">
-click me NOW!</button>
 
 
-
-
-<a href="#" name="button1" onclick="dataLayer.push({'event': 'button1-click'});" >Button 1</a>
-
-
-<a href="#" name="button1" onclick="dataLayer.push({
-   "event":"EEproductClick",
-   "ecommerce": {
-     "currencyCode":"USD",
-     "click": {
-       "actionField": {"list":"category" },
-       "products": [{
-         "id":"9bf1d",
-         "name":"Boss T-Shirt",
-         "price":"37.00",
-         "brand":"Converse",
-         "category":"Men/Clothing/T-Shirts",
-         "position":"2"
-      }]
-    }
-  }
-});" >Button 2!!!</a>
+<button a href="step3.html">Naar stap 3</button>
 
 
 
@@ -120,37 +81,45 @@ click me NOW!</button>
 
 
 
+          <script>
+                  dataLayer.push({
+                    "event":"BV_checkout",
+                    "ecommerce": {
+                      "checkout": {
+                        "actionField": {"step":2,"option":"Free delivery" },
+                        "products": [{
+                          "id":"98adsh",
+                          "name":"Converse T-Shirt",
+                          "price":"12.50",
+                          "brand":"Converse",
+                          "category":"Men/Clothing/T-Shirts",
+                          "variant":"red",
+                          "position":0, //it could prove insightful to send the product position within the cart in the checkout process, although not mandatory
+                          "quantity":2
+                       },
+                       {
+                          "id":"m3g45",
+                          "name":"Boss Pants",
+                          "price":"38.00",
+                          "brand":"Boss",
+                          "category":"Men/Clothing/Pants",
+                          "variant":"blue",
+                          "position":1,
+                          "quantity":1
+                       }]
+                     }
+                   }
+                 });
+          </script>
 
-<!--
-          dataLayer.push({
-             "event":"EEcheckout",
-             "ecommerce": {
-               "checkout": {
-                 "actionField": {"step":1,"option":"Free delivery" },
-                 "products": [{
-                   "id":"98adsh",
-                   "name":"Converse T-Shirt",
-                   "price":"12.50",
-                   "brand":"Converse",
-                   "category":"Men/Clothing/T-Shirts",
-                   "variant":"red",
-                   "position":0, //it could prove insightful to send the product position within the cart in the checkout process, although not mandatory
-                   "quantity":2
-                },
-                {
-                   "id":"m3g45",
-                   "name":"Boss Pants",
-                   "price":"38.00",
-                   "brand":"Boss",
-                   "category":"Men/Clothing/Pants",
-                   "variant":"blue",
-                   "position":1,
-                   "quantity":1
-                }]
-              }
-            }
-          });
--->
+
+
+
+
+
+
+
+
 
 
 

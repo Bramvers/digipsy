@@ -99,28 +99,42 @@
           </script>
 
 
+          <button a href="ecommerce.html">Naar ecommerce (thank you)</button>
+
+                    <script>
+                            dataLayer.push({
+                              "event":"BV_checkout",
+                              "ecommerce": {
+                                "checkout": {
+                                  "actionField": {"step":3,"option":"Free delivery" },
+                                  "products": [{
+                                    "id":"98adsh",
+                                    "name":"Converse T-Shirt",
+                                    "price":"12.50",
+                                    "brand":"Converse",
+                                    "category":"Men/Clothing/T-Shirts",
+                                    "variant":"red",
+                                    "position":0, //it could prove insightful to send the product position within the cart in the checkout process, although not mandatory
+                                    "quantity":2
+                                 },
+                                 {
+                                    "id":"m3g45",
+                                    "name":"Boss Pants",
+                                    "price":"38.00",
+                                    "brand":"Boss",
+                                    "category":"Men/Clothing/Pants",
+                                    "variant":"blue",
+                                    "position":1,
+                                    "quantity":1
+                                 }]
+                               }
+                             }
+                           });
+                    </script>
 
 
-  <script>
-          dataLayer.push({
-             "event":"EEproductClick1",
-             "ecommerce": {
-               "currencyCode":"USD",
-               "click": {
-                 "actionField": {"list":"category" },
-                 "products": [{
-                   "id":"9bf1d",
-                   "name":"Boss T-Shirt",
-                   "price":"37.00",
-                   "brand":"Converse",
-                   "category":"Men/Clothing/T-Shirts",
-                   "position":"2"
-                }]
-              }
-            }
-          });
-              }
-  </script>
+
+
 
 <p> drie hier </p>
 
@@ -145,6 +159,8 @@
               }
             });
     </script>
+
+<!-- NIET VERWIJDEREN BOVEN DEZE DOET HET -->
 
 
           <script>
