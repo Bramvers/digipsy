@@ -69,47 +69,32 @@
           <img class="img1" src="nepal.jpg" height="10%" width="100%">
           <h1 class="display-3">Artikel 2: product click</h1>
 
-          <p><a class="btn btn-primary btn-lg" href="step3.html" onclick="dataLayer.push({'event': 'buttonclick'});">naar stap 3!!</a></p>
 
 
-          <a href="#" name="button1" onclick="dataLayer.push({'event': 'button1-click'});" >Button 1</a>
-
-
-          <a href="#" name="button1" onclick="dataLayer.push({'event': 'button1-click',
-            "ecommerce": {
-              "checkout": {
-                "actionField": {"step: 1"},
-                "products": [{
-                  "id": "1234444",
-                  "name": "dope shit",
-
-
-                  ]
-              }
-            }
-
-
-        });" >Button 1</a>
-
-
-
-<p> BV_checkout </P>
-
-        <script>
-        /**
-         * A function to handle a click leading to a checkout option selection.
-         */
-
+          <button a href="#" onclick="
           dataLayer.push({
-            'event': 'BV_checkout',
-            'ecommerce': {
-              'checkout_option': {
-                'actionField': {'step': 1, 'option': checkoutOption}
+             "event":"EEproductClick",
+             "ecommerce": {
+               "currencyCode":"USD",
+               "click": {
+                 "actionField": {"list":"category" },
+                 "products": [{
+                   "id":"9bf1d",
+                   "name":"Boss T-Shirt",
+                   "price":"37.00",
+                   "brand":"Converse",
+                   "category":"Men/Clothing/T-Shirts",
+                   "position":"2"
+                }]
               }
             }
-          });
+          });">
+click me NOW!</button>
 
-        </script>
+
+
+
+
 
 
 
