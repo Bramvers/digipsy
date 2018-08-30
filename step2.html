@@ -74,34 +74,42 @@
 
           <a href="#" name="button1" onclick="dataLayer.push({'event': 'button1-click'});" >Button 1</a>
 
-          <a href="#" name="button1" onclick="  dataLayer.push({"event":"EEcheckout",
-               "ecommerce": {
-                 "checkout": {
-                   "actionField": {"step":1,"option":"Free delivery" },
-                   "products": [{
-                     "id":"98adsh",
-                     "name":"Converse T-Shirt",
-                     "price":"12.50",
-                     "brand":"Converse",
-                     "category":"Men/Clothing/T-Shirts",
-                     "variant":"red",
-                     "position":0, //it could prove insightful to send the product position within the cart in the checkout process, although not mandatory
-                     "quantity":2
-                  },
-                  {
-                     "id":"m3g45",
-                     "name":"Boss Pants",
-                     "price":"38.00",
-                     "brand":"Boss",
-                     "category":"Men/Clothing/Pants",
-                     "variant":"blue",
-                     "position":1,
-                     "quantity":1
-                  }]
-                }
-              }
-            });" >EEcheckout 1</a>
 
+          <a href="#" name="button1" onclick="dataLayer.push({'event': 'button1-click',
+            "ecommerce": {
+              "checkout": {
+                "actionField": {"step: 1"},
+                "products": [{
+                  "id": "1234444",
+                  "name": "dope shit",
+
+
+                  ]
+              }
+            }
+
+
+        });" >Button 1</a>
+
+
+
+<p> BV_checkout </P>
+
+        <script>
+        /**
+         * A function to handle a click leading to a checkout option selection.
+         */
+
+          dataLayer.push({
+            'event': 'BV_checkout',
+            'ecommerce': {
+              'checkout_option': {
+                'actionField': {'step': 1, 'option': checkoutOption}
+              }
+            }
+          });
+
+        </script>
 
 
 
