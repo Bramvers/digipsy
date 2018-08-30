@@ -69,45 +69,38 @@
           <h1 class="display-3">Artikel 1: hoe werkt het!</h1>
 
 
-      <script>
+          <script>
+          // Measures product impressions and also tracks a standard
+          // pageview for the tag configuration.
+          // Product impressions are sent by pushing an impressions object
+          // containing one or more impressionFieldObjects.
           dataLayer.push({
-             "ecommerce": {
-               "currencyCode":"EUR",
-               "impressions": [    //the array of products present within the listing
-                {
-                   "id":"artikel1hoewerkthet",    //internal id or SKU
-                   "name":"Artikel: 1 hoe werkt het",    //you should have at least Name and ID set up
-                   "price":"1.00",   //use only xxxx.xx formatting
-                   "brand":"BraVe Superbrand", //manufacturer or designer
-                   "category":"Psychology", //can be hierarchical up to 5 levels; separated by"/"
-                   "position":1,    //position within the list
-                   "variant":"Blue", //optional,if you need more differentiation
-                   "list":"Overzicht artikelen"    //custom name for the list of products
-                 },
-                   {
-                     'name': 'Artikel 2: hallo',
-                     'id': 'artikel2hallo',
-                     'price': '2.00',
-                     'brand': 'Just Brand',
-                     'category': 'Analytics',
-                     'variant': 'Black',
-                     'list': 'Overzicht artikelen',
-                     'position': 2
-                   }],
-                  'detail': {
-                    'actionField': {'list': 'Overzicht artikelen'}  // 'detail' actions have an optional list property.
-                    'products': [{
-                      'name': 'Test baan detail',       // Name or ID is required.
-                      'id': '12345',
-                      'price': '5.25',
-                      'brand': 'Jees Brand',
-                      'category': 'Various',
-                      'variant': 'green'
-                    }]
-                      }
-                   }
-                 });
-         </script>
+            'ecommerce': {
+              'currencyCode': 'EUR',                       // Local currency is optional.
+              'impressions': [
+               {
+                 'name': 'BraVe stuff',       // Name or ID is required.
+                 'id': '12345',
+                 'price': '15.25',
+                 'brand': 'BraVe',
+                 'category': 'cool',
+                 'variant': 'Gray',
+                 'list': 'Search Results',
+                 'position': 1
+               },
+               {
+                 'name': 'BraVe shitt',
+                 'id': '67890',
+                 'price': '33.75',
+                 'brand': 'BraVe',
+                 'category': 'tof',
+                 'variant': 'Black',
+                 'list': 'Search Results',
+                 'position': 2
+               }]
+            }
+          });
+          </script>
 
 
 
