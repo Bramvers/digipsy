@@ -164,6 +164,29 @@
 
 
 
+            <script>
+            /**
+             * Call this function when a user clicks on a product link. This function uses the event
+             * callback datalayer variable to handle navigation after the ecommerce data has been sent
+             * to Google Analytics.
+             * @param {Object} productObj An object representing a product.
+             */
+            dataLayer.push({
+                'event': 'productClick',
+                'ecommerce': {
+                  'click': {
+                    'actionField': {'list': 'Blog Posts', action: 'click'},      // Optional list property.
+                    'products': [{
+                      'name': 'onlinepersuasionUXtips',                      // Name or ID is required.
+                      'id': 'Online persuasion: UX tips',
+                      'price': '10',
+                      'brand': 'brave',
+                      'category': 'analytics'
+                     }]
+                   }
+                 }
+              });
+        </script>
 
 
 
