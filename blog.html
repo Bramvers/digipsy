@@ -96,18 +96,79 @@
         </div>
         <div class="row">
           <div class="col-md-10">
-            <h3>Post 3: Online Persuasion: UX principles</h3>
+            <h3>Post 1: Online Persuasion: UX principles</h3>
             <p>This will be the second post of the blog </P>
+            <button2><a href="step1.html">Continue reading</a></button2>
+
             <h3>Post 2: Cognitive Psychology in Marketing</h3>
             <p>This will be the second post of the blog </P>
-            <h3> Post 1: Neuromarketing Principles</h3>
+            <button1><a href="step2.html">Continue reading</a></button1>
+
+            <h3> Post 3: Neuromarketing Principles</h3>
             <p>This will be the first post of the blog </P>
+            <button1><a href="step3.html">Continue reading</a></button1>
+
           </div>
           <div class="row">
             <div class="col-md-0">
           </div>
         </div>
       </div>
+
+
+
+      <script>
+      // Measures product impressions and also tracks a standard
+      // pageview for the tag configuration.
+      // Product impressions are sent by pushing an impressions object
+      // containing one or more impressionFieldObjects.
+      dataLayer.push({
+        'ecommerce': {
+          'currencyCode': 'EUR',                       // Local currency is optional.
+          'impressions': [
+           {
+             'name': 'onlinepersuasionUXtips',       // Name or ID is required.
+             'id': 'Online persuasion: UX tips',
+             'price': '',
+             'brand': '',
+             'category': 'analytics',
+             'variant': '',
+             'list': 'Blog Posts',
+             'position': 1
+           },
+           {
+             'name': 'cognitivepyschologyinmarketing',       // Name or ID is required.
+             'id': 'Convignitve psychology in marketing',
+             'price': '',
+             'brand': '',
+             'category': 'psychology',
+             'variant': '',
+             'list': 'Blog Posts',
+             'position': 2
+           },
+             {
+             'name': 'Neuromarketingprinciples',       // Name or ID is required.
+             'id': 'Neuromarketing principle',
+             'price': '',
+             'brand': '',
+             'category': 'Psychology',
+             'variant': '',
+             'list': 'Blog Posts',
+             'position': 3
+           }]
+         }
+      });
+      </script>
+
+
+
+
+
+
+
+
+
+
 
         <hr>
 
