@@ -63,13 +63,6 @@
 
               <ul class="nav navbar-nav navbar-right">
                  <li>
-
-                <!--
-                <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                -->
                 </li>
               </ul>
 
@@ -117,6 +110,8 @@
 
 
 
+<!-- NIET VERWIJDEREN DEZE WERKT -->
+
       <script>
       // Measures product impressions and also tracks a standard
       // pageview for the tag configuration.
@@ -160,33 +155,65 @@
       });
       </script>
 
+<!-- NIET VERWIJDEREN DEZE WERKT -->
+<!-- NIET VERWIJDEREN DEZE WERKT -->
+
+        <script>
+        /**
+          aangepast script, zonder callback function. pusht nu altijd, moet later on click
+         */
+        dataLayer.push({
+            'event': 'productClick',
+            'ecommerce': {
+              'click': {
+                'actionField': {'list': 'Blog Posts', action: 'click'},      // Optional list property.
+                'products': [{
+                  'name': 'onlinepersuasionUXtips',                      // Name or ID is required.
+                  'id': 'Online persuasion: UX tips',
+                  'price': '10',
+                  'brand': 'brave',
+                  'category': 'analytics'
+                 }]
+               }
+             }
+          });
+    </script>
+
+<!-- NIET VERWIJDEREN DEZE WERKT -->
+
+<script>
+/**
+  aangepast script, zonder callback function. pusht nu altijd, moet later on click
+ */
+dataLayer.push({
+    'ecommerce': {
+      'click': {
+        'actionField': {'list': 'Blog Posts', action: 'click'},      // Optional list property.
+        'products': [{
+          'name': 'onlinepersuasionUXtips2',                      // Name or ID is required.
+          'id': 'Online persuasion: UX tips2table',
+          'price': '10',
+          'brand': 'brave',
+          'category': 'analytics'
+         }]
+       }
+     }
+  });
+</script>
+
+
+
+<a href="#step2" name="button1" onclick="dataLayer.push({'event': 'productClick2'});" >Button 2</a>
 
 
 
 
-            <script>
-            /**
-             * Call this function when a user clicks on a product link. This function uses the event
-             * callback datalayer variable to handle navigation after the ecommerce data has been sent
-             * to Google Analytics.
-             * @param {Object} productObj An object representing a product.
-             */
-            dataLayer.push({
-                'event': 'productClick',
-                'ecommerce': {
-                  'click': {
-                    'actionField': {'list': 'Blog Posts', action: 'click'},      // Optional list property.
-                    'products': [{
-                      'name': 'onlinepersuasionUXtips',                      // Name or ID is required.
-                      'id': 'Online persuasion: UX tips',
-                      'price': '10',
-                      'brand': 'brave',
-                      'category': 'analytics'
-                     }]
-                   }
-                 }
-              });
-        </script>
+
+
+
+
+
+
 
 
 
